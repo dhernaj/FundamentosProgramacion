@@ -1,28 +1,12 @@
-# Guía de Laboratorio Sesión 6: Alcance de Variables y Control Modular sin Clases
+# Guía de Laboratorio Sesión 6: Alcance de Variables y Control Modular
 
-**Objetivo:** Implementar un sistema de control de sensores térmicos aplicando el alcance de variables (local y global) y principios de diseño modular. Se simulará el encapsulamiento mediante validación controlada sin usar clases, instancias ni arrays. Además, se gestionarán versiones del código utilizando Git.
+**Objetivo:** Implementar un sistema de control de sensores térmicos aplicando el alcance de variables (local y global) y principios de diseño modular. Se simulará el encapsulamiento mediante validación controlada.
 
 ---
 
 ## Fase 0: Preparación de Entorno y Control de Versiones
 
 **Meta:** Inicializar un repositorio y registrar versiones del sistema a medida que evoluciona.
-
-<details>
-<summary><b>📘 Teoría: ¿Por qué usar control de versiones?</b></summary>
-
-El control de versiones permite guardar el historial del desarrollo del software. En sistemas industriales:
-
-* Permite rastrear cambios
-* Facilita la colaboración
-* Permite recuperar versiones estables
-
-Cada mejora debe registrarse como una nueva versión.
-
-</details>
-
-<details>
-<summary><b>⚡ Ejercicio Rápido: Inicializar repositorio</b></summary>
 
 Ejecuta en tu terminal:
 
@@ -31,8 +15,6 @@ git init
 git add .
 git commit -m "v1: Estructura inicial del sistema de sensores"
 ```
-
-</details>
 
 ---
 
