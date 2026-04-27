@@ -1,4 +1,4 @@
-# Guía de Laboratorio Sesión 6: Alcance de Variables y Control Modular
+# Guía de Laboratorio Sesión 6: Ejercicio 1
 
 **Objetivo:** Implementar un sistema de control de sensores térmicos aplicando el alcance de variables (local y global) y principios de diseño modular. Se simulará el encapsulamiento mediante validación controlada.
 
@@ -22,15 +22,7 @@ git commit -m "v1: Estructura inicial del sistema de sensores"
 
 **Meta:** Implementar una variable global y una función que evalúe el estado de temperatura.
 
-<details>
-<summary><b>📘 Teoría: Alcance de Variables</b></summary>
-
-* **Variable Global:** Se define fuera de funciones y puede ser leída desde cualquier parte del programa.
-* **Variable Local:** Solo existe dentro de la función donde se declara.
-
 👉 Buena práctica: usar variables globales solo para configuración, no modificarlas directamente.
-
-</details>
 
 ---
 
@@ -98,20 +90,7 @@ git commit -m "v2: Evaluación básica de temperatura con variable global"
 
 ## Fase 2: Validación de Datos (Encapsulamiento Simulado)
 
-**Meta:** Validar datos antes de procesarlos, simulando encapsulamiento sin clases.
-
-<details>
-<summary><b>📘 Teoría: Encapsulamiento sin clases</b></summary>
-
-Aunque no usamos clases, podemos aplicar encapsulamiento:
-
-* Controlando el acceso a los datos
-* Validando antes de usar valores
-* Evitando datos inválidos en el sistema
-
-👉 Esto protege la lógica del programa.
-
-</details>
+**Meta:** Validar datos antes de procesarlos.
 
 ---
 
