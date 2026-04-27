@@ -206,51 +206,7 @@ git commit -m "v2: Validación implementada"
 
 ---
 
-## Fase 3: Variable No Local (Python)
-
-**Meta:** Entender el uso de `nonlocal`.
-
-<details>
-<summary><b>📘 Teoría: Variable No Local</b></summary>
-
-Se usa en funciones anidadas para modificar variables externas.
-
-👉 No afecta variables globales, solo del contexto inmediato.
-
-</details>
-
----
-
-### Paso 3: Ejemplo
-
-Python
-
-```
-def sistema():
-    estado = "apagado"
-
-    def encender():
-        nonlocal estado
-        estado = "encendido"
-
-    encender()
-    print("Estado:", estado)
-
-sistema()
-```
-
----
-
-Guardar:
-
-```
-git add .
-git commit -m "v3: Uso de nonlocal en Python"
-```
-
----
-
-## Fase 4: Diseño Modular
+## Fase 3: Diseño Modular
 
 **Meta:** Dividir el sistema en funciones independientes.
 
@@ -334,7 +290,7 @@ Guardar:
 
 ```
 git add .
-git commit -m "v4: Sistema modular completo"
+git commit -m "v3: Sistema modular completo"
 ```
 
 ---
@@ -389,7 +345,7 @@ Guardar:
 
 ```
 git add .
-git commit -m "v5: Mejora de alcance"
+git commit -m "v4: Mejora de alcance"
 ```
 
 ---
