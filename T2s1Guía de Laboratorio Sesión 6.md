@@ -260,30 +260,42 @@ if validar(temp):
 Opción B: C#
 
 ```
+double LIMITE_GLOBAL = 80;
+
 static double Ingresar()
 {
     Console.Write("Ingrese temperatura: ");
-    return double.Parse(Console.ReadLine());
+    double temperatura = double.Parse(Console.ReadLine());
+    return temperatura;
 }
 
 static bool Validar(double temp)
 {
     if (temp < 0)
-        return false;
-    return true;
+    {
+    Console.WriteLine("Temperatura inválida");
+    return false;
+    }
+    else return true;
 }
 
-static string Evaluar(double temp)
+string Evaluar(double temp)
 {
-    if (temp > LIMITE_GLOBAL)
-        return "ALERTA";
-    return "NORMAL";
+    if (temp > LIMITE_GLOBAL) return "ALERTA";
+    else return "NORMAL";
 }
 
 static void Mostrar(string resultado)
 {
     Console.WriteLine("Estado: " + resultado);
 }
+
+    double temp = Ingresar();
+    if (Validar(temp))
+    {
+        string estado = Evaluar(temp);
+        Mostrar(estado);
+    }
 ```
 
 Guardar:
