@@ -317,16 +317,6 @@ git push -u origin master
 
 ---
 
-## 🧠 Reflexión Final
-
-Responde:
-
-* ¿Por qué es importante validar datos antes de procesarlos?
-* ¿Qué problema genera depender de variables globales?
-* ¿Qué ventaja tiene dividir el sistema en funciones?
-
----
-
 > [!NOTE]
 > Reto Adicional (Nivel Medio)
 >
