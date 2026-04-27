@@ -376,20 +376,83 @@ Simular cambio en GitHub y luego:
 git pull origin master
 ```
 
+Aquí tienes **4 problemas adicionales de nivel medio**, con **contextos distintos** al industrial y manteniendo coherencia con tu enfoque (funciones, alcance, sin clases ni arrays):
+
 ---
 
-> [!NOTE]
-> Reto Adicional de Ingeniería (Nivel Medio)
->
-> Diseña un sistema que:
->
-> * Solicite 3 temperaturas (una por una, sin arrays)
-> * Valide cada una
-> * Cuente cuántas están en alerta
-> * Use funciones modulares
->
-> Crear rama:
->
-> ```
-> git checkout -b reto-sensores
-> ```
+## Ejercicios de Nivel Medio
+
+---
+
+### 🧩 Ejercicio 5: Control de Consumo Eléctrico Doméstico
+
+**Enunciado:**
+Un hogar desea monitorear su consumo eléctrico diario para evitar sobrecargas. Se requiere un programa que evalúe el consumo ingresado por el usuario y determine si se encuentra dentro de un rango seguro.
+
+**Requerimientos:**
+
+* Definir un límite máximo de consumo como variable global
+* Crear una función para ingresar el consumo diario
+* Validar que el valor ingresado no sea negativo
+* Crear una función que determine si el consumo es **Normal** o **Excesivo**
+* Mostrar el resultado final al usuario
+* Usar funciones para estructurar el programa
+
+---
+
+### 🧩 Ejercicio 6: Evaluación de Calificaciones Académicas
+
+**Enunciado:**
+Un docente necesita evaluar el rendimiento de un estudiante a partir de tres notas ingresadas manualmente.
+
+**Requerimientos:**
+
+* Solicitar 3 notas 
+* Validar que cada nota esté entre 0 y 20
+* Calcular el promedio usando variables simples
+* Crear una función que determine si el estudiante está:
+
+  * **Aprobado** (≥ 12)
+  * **Desaprobado** (< 12)
+* Evitar uso innecesario de variables globales
+* Mostrar el resultado final
+
+---
+
+### 🧩 Ejercicio 7: Sistema de Control de Acceso
+
+**Enunciado:**
+Una empresa desea controlar el acceso de personas a una instalación restringida mediante un código de verificación.
+
+**Requerimientos:**
+
+* No usar variable global
+* Crear una función que solicite el código al usuario
+* Crear una función que valide si el código es correcto
+* Mostrar:
+
+  * **Acceso permitido**
+  * **Acceso denegado**
+* Implementar una función adicional que registre (imprima) el intento
+
+---
+
+### 🧩 Ejercicio 8: Monitoreo de Nivel de Agua en Tanque
+
+**Enunciado:**
+Un sistema básico debe controlar el nivel de agua en un tanque para evitar desbordes o vacíos críticos.
+
+**Requerimientos:**
+
+* Definir niveles mínimo y máximo (no usar variables globales)
+* Crear una función para ingresar el nivel actual
+* Validar que el nivel no sea negativo
+* Crear una función que determine el estado:
+
+  * **Bajo** (por debajo del mínimo)
+  * **Normal**
+  * **Alto** (por encima del máximo)
+* Mostrar el estado del sistema
+* Organizar el código de forma modular
+
+---
