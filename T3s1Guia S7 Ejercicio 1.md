@@ -1,11 +1,11 @@
-# ⚓ Guía de Laboratorio: Operación "Batalla Naval"
+# Guía de Laboratorio: Operación "Batalla Naval"
 
-## 🎯 Objetivo de la Práctica
+## Objetivo de la Práctica
 Diseñar e implementar un simulador interactivo del juego "Batalla Naval" en consola. Esta práctica consolida el manejo de **arreglos bidimensionales (matrices)**, estructuras de control y modularidad empleando los lenguajes de programación del curso, además de gestionar el control de versiones con **Git y GitHub**[cite: 1].
 
 ---
 
-## 🛠️ Fase 1: Configuración del Cuartel General (Git)
+## Fase 1: Configuración del Cuartel General (Git)
 
 Antes de escribir código, debemos asegurar nuestro entorno de trabajo y el control de versiones.
 
@@ -22,12 +22,12 @@ Antes de escribir código, debemos asegurar nuestro entorno de trabajo y el cont
 4. Realiza tu primer *commit* de configuración:
    ```bash
    git add .
-   git commit -m "feat: Inicialización del proyecto Batalla Naval"
+   git commit -m "Inicialización del proyecto Batalla Naval"
    ```
 
 ---
 
-## 🗺️ Fase 2: El Radar (Recorrido de Matrices)
+##  Fase 2: El Radar (Recorrido de Matrices)
 
 Crearemos una función modular que se encargará de traducir los números de nuestra matriz a símbolos visuales para que el jugador pueda ver el estado del tablero.
 *   `~` : Agua (0)
@@ -81,13 +81,13 @@ def dibujar_mapa(mapa):
         print() 
 ```
 
-> **🛡️ Punto de Control Git:** 
+> ** Punto de Control Git:** 
 > `git add .`
-> `git commit -m "feat: Función modular para visualizar el radar del océano"`
+> `git commit -m "Función modular para visualizar el radar del océano"`
 
 ---
 
-## 🌊 Fase 3: Despliegue de la Flota (Declaración e Inserción)
+##  Fase 3: Despliegue de la Flota (Declaración e Inserción)
 
 Dentro de la función principal de nuestro programa, declararemos una cuadrícula de 5x5 llena de ceros (agua) y posicionaremos estratégicamente nuestros barcos (unos).
 
@@ -128,11 +128,11 @@ dibujar_mapa(oceano) # Mostramos el radar inicial
 
 > **🛡️ Punto de Control Git:** 
 > `git add .`
-> `git commit -m "feat: Creación de matriz 5x5 y posicionamiento de barcos"`
+> `git commit -m "Creación de matriz 5x5 y posicionamiento de barcos"`
 
 ---
 
-## 💥 Fase 4: ¡Fuego a Discreción! (Búsqueda y Modificación)
+##  Fase 4: ¡Fuego a Discreción! (Búsqueda y Modificación)
 
 Pediremos al jugador que ingrese coordenadas para atacar. Evaluaremos esa posición en la matriz para determinar si fue un impacto o un fallo al agua.
 
@@ -178,13 +178,13 @@ else:
 dibujar_mapa(oceano)
 ```
 
-> **🛡️ Punto de Control Git:** 
+> ** Punto de Control Git:** 
 > `git add .`
-> `git commit -m "feat: Lógica de ataque y actualización dinámica de matriz"`
+> `git commit -m "Lógica de ataque y actualización dinámica de matriz"`
 
 ---
 
-## 📡 Fase 5: Reporte al Satélite (Sincronización)
+##  Fase 5: Reporte al Satélite (Sincronización)
 
 Es momento de subir el código al repositorio remoto para entrega y evaluación.
 
@@ -200,6 +200,6 @@ Es momento de subir el código al repositorio remoto para entrega y evaluación.
 
 ---
 
-## 🧠 Reto Nivel Ingeniero (Actividad Autónoma)
+##  Reto Nivel Ingeniero (Actividad Autónoma)
 Actualmente, el radar muestra dónde están escondidos los barcos (`B`). Modifica la función `DibujarMapa` / `dibujar_mapa` para que los barcos permanezcan ocultos (mostrándose como agua `~`) hasta que sean impactados y se conviertan en una `X`. Adicionalmente, encierra el bloque de ataque en un bucle (condicional repetitiva) para permitir múltiples disparos hasta hundir la flota completa.
 ```
